@@ -2,9 +2,9 @@ const { Model, DataTypes } = require("sequelize");
 
 const sequelize = require("../config/connection.js");
 
-class Category extends Model {}
+class Pet extends Model {}
 
-Category.init(
+Pet.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -34,8 +34,8 @@ Category.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "category",
+    modelName: "pet",
   }
 );
 
-module.exports = Category;
+module.exports = Pet;
