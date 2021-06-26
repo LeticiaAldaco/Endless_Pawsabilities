@@ -24,10 +24,6 @@ Pet.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    nameType: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
   },
   {
     sequelize,
