@@ -1,4 +1,5 @@
 async function loginFormHandler(event) {
+    try{
     event.preventDefault();
   
     const email = document.querySelector('#email-login').value.trim();
@@ -47,7 +48,11 @@ async function loginFormHandler(event) {
       }
     }
   }
-  
+    } catch (e) {
+        console.log('error = ', e);
+        process.exit(1);
+    }
+
   document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
   
   document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
