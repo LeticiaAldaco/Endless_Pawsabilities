@@ -5,7 +5,16 @@ class User extends Model {}
 
 User.init(
   {
-    userName: { type: DataTypes.STRING, allowNull: false },
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    userName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     userPsw: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -16,7 +25,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "pet",
+    modelName: "user",
   }
 );
 
