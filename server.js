@@ -19,7 +19,7 @@
 //     db: sequelize
 //   })
 // };
-git status
+
 // app.use(session(sess));
 // app.engine('handlebars', hbs.engine);
 // app.set('view engine', 'handlebars');
@@ -36,23 +36,26 @@ git status
 
 const express = require('express');
 const app = express();
-const port = 3001
+const port = 3000;
+
 const handlebars = require('express-handlebars');
-
+ 
 app.set('view engine', 'handlebars');
-app.engine('handlebars', handlebars({
-    layoutsDir: `${__dirname}/views/layouts`,
-    extname: 'hbs',
-    defaultLayout: 'index',
-    partialDir: `${__dirname}/views/partials`,
-}));
-app.use(express.static('public'));
 
-const getApi = () => 
+app.engine('handlebars', handlebars({
+    layoutDir: `${__dirname}/views/layouts`
+}));
+
+app.use(express.static('public'))
+ 
 app.get('/', (req, res) => {
-    res.render('main');
+    res.render('homepage');
 });
 
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+
 app.listen(port, () => {
-    console.log(`App listening to ${port}`);
+    console.log(`App listening to port ${port}`);
 });

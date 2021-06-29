@@ -1,0 +1,10 @@
+.title {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.lines {
+    color: blue;
+}
