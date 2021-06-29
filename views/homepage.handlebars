@@ -1,11 +1,28 @@
-<h1 class="title">Endless Pawsibilities homepage page</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endless Pawsibilities homepage page</title>
+  </head>
+  <body>
+    <h1 class="title">Endless Pawsibilities homepage page</h1>
+    {{!-- login/signup  --}}
+    {{> login-signup }}
+{{!-- paw buttons container --}}
+    <div class="container-btns">
+        {{> main-btns }}
+        <div class="results"></div>
+    </div>
 
-<ul>
-    <li class="lines">one</li>
-    <li class="lines">two</li>
-    <li class="lines">three</li>
-    <li class="lines">four</li>
-    <li class="lines">five</li>
-</ul>
+{{!-- letter selector --}}
+<div class="letter-selector">
+{{> letter-selector }}
+</div>
 
 
+    <div id="results"></div>
+  </body>
+
+  <footer>Impawsible decisions made easy!</footer>
+</html>
