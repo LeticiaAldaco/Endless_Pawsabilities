@@ -1,10 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
-
 const sequelize = require("../config/connection.js");
 
-class Pet extends Model {}
+class User extends Model {}
 
-Pet.init(
+User.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,11 +11,11 @@ Pet.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    gender: {
+    userName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    name: {
+    userPsw: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -26,8 +25,8 @@ Pet.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "pet",
+    modelName: "user",
   }
 );
 
-module.exports = Pet;
+module.exports = User;
