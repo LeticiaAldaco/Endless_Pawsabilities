@@ -1,7 +1,7 @@
 {
-  "name": "Endless_Pawsabilities",
+  "name": "endless_pawsabilities",
   "version": "1.0.0",
-  "description": "",
+  "description": "pet naming app",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -12,6 +12,7 @@
     "express-session": "^1.17.2",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "sequelize": "^6.6.4"
@@ -20,15 +21,16 @@
   "scripts": {
     "test": "jest",
     "seeds": "node seeds/index.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev":"nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LeticiaAldaco/Endless_Pawsabilities.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "group 8",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/LeticiaAldaco/Endless_Pawsabilities/issues"
   },
