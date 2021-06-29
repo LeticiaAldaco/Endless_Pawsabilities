@@ -245,3 +245,36 @@ const girlNames = [
   { name: "KALI", gender: "female" },
   { name: "GWENDOLYN", gender: "female" },
 ];
+
+const seedsPet = () => Pet.bulkCreate([...boyNames, ...girlNames]);
+
+module.exports = seedsPet;
+
+// const alpha = [
+//   "A",
+//   "B",
+//   "C",
+//   "D",
+//   "E",
+//   "F",
+//   "G",
+//   "H",
+//   "I",
+//   "J",
+//   "K",
+//   "L",
+//   "M",
+//   "N",
+//   "O",
+//   "P",
+//   "Q",
+//   "R",
+//   "S",
+//   "T",
+//   "U",
+//   "V",
+//   "W",
+//   "X",
+//   "Y",
+//   "Z",
+// ];
