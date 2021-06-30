@@ -1,9 +1,38 @@
-<div>You are on the homepage</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endless Pawsibilities</title>
+  </head>
+  <body>
 
-<ol>
-    {{#each}}
-    <li>
-        {{>}}
-    </li>
-    {{/each}}
-</ol>
+    <h1 class="title">Endless Pawsibilities</h1>
+    <img class="logo" src="/public/stylesheet/logo.jpeg" alt="">
+    {{!-- login/signup  --}}
+    {{> login-signup }}
+{{!-- paw buttons container --}}
+    <div class="container-btns">
+      <div class="steps">
+        <h4>STEP 1: CHOOSE A LETTER</h4>
+        <h4>STEP 2: SELECT GENDER</h4>
+        <h4>STEP 3: GENERATE NAME</h4>
+      </div>
+        {{> main-btns }}
+        <div>
+          <h4 class="ltr-title">CHOOSE A LETTER</h4>
+          <div class="letter-container">
+        {{> letter-selector }}
+          </div>
+        </div>
+        
+        <div class="results"></div>
+    </div>
+
+<div>
+  {{>generate-seeall}}
+</div>
+  </body>
+
+  <footer>Impawsible decisions made easy!</footer>
+</html>

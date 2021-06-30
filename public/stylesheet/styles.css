@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0ddb9;
+}
+
+.title {
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(logo.jpeg);
+  mix-blend-mode: normal;
+  border-radius: 84px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: 125px;
+}
+
+.btn-container {
+  border: none;
+  color: black;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 10px 10px;
+}
+
+.ltr-title {
+  font-family: "Courier New", Courier, monospace;
+  top: -35px;
+  left: 10px;
+  padding: 10px 10px;
+}
+
+.letter-container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}
+
+.container-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 113%;
+  height: fit-content;
+}
+
+.ltr-btn {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #9bc5dd;
+  color: black;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+#male-btn,
+#female-btn,
+#both-btn {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  background-color: #9bc5dd;
+  position: relative;
+  padding: 45px 45px 45px 45px;
+  margin: auto;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+#both-btn {
+  top: -20px;
+  left: 0px;
+}
+.parent {
+  display: table;
+  margin: -15px auto;
+  background: #9bc5dd;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.middle {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+}
+
+.circle {
+  margin: auto;
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.steps {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+.login-btn,
+.signup-btn {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  border-radius: 60%;
+  padding: 15px 45px 15px 45px;
+  background-color: #9bc5dd;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.gen-section {
+    align-items: center;
+}
+
+#generate-btn,
+#see-all-btn {
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  border-radius: 60%;
+  padding: 15px 45px 15px 45px;
+  background-color: #9bc5dd;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
