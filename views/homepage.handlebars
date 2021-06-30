@@ -3,10 +3,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Endless Pawsibilities homepage page</title>
+    <title>Endless Pawsibilities</title>
   </head>
   <body>
-    <h1 class="title">Endless Pawsibilities homepage page</h1>
+
+    <h1 class="title">Endless Pawsibilities</h1>
+    <img class="logo" src="/public/stylesheet/Dogcatlogo.jpeg" alt="">
     {{!-- login/signup  --}}
     {{> login-signup }}
 {{!-- paw buttons container --}}
@@ -16,12 +18,25 @@
     </div>
 
 {{!-- letter selector --}}
-<div class="letter-selector">
+
+<div class="letter-container">
+  <h4 class="ltr-title">CHOOSE A LETTER</h4>
 {{> letter-selector }}
 </div>
 
 
-    <div id="results"></div>
+    <div id="results">
+      <div class="gen-results">
+       
+      </div>
+    </div>
+    <div class="parent">
+    <div class="middle">
+        <div class="circle">
+          PAWSIBLE NAMES
+        </div>
+    </div>
+</div>
   </body>
 
   <footer>Impawsible decisions made easy!</footer>

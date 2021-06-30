@@ -34,28 +34,31 @@
 //   app.listen(PORT, () => console.log('Now listening'));
 // });
 
-const path = require('path');
-const express = require('express');
+const path = require("path");
+const express = require("express");
 const app = express();
 const port = 3000;
 
-const handlebars = require('express-handlebars');
-app.engine('handlebars', handlebars({
-    layoutDir: `${__dirname}/views/layouts`
-}));
-app.set('view engine', 'handlebars');
+const handlebars = require("express-handlebars");
+app.engine(
+  "handlebars",
+  handlebars({
+    layoutDir: `${__dirname}/views/layouts`,
+  })
+);
+app.set("view engine", "handlebars");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
- 
-app.get('/', (req, res) => {
-    res.render('homepage');
+app.use("/public", express.static("public"));
+
+app.get("/", (req, res) => {
+  res.render("homepage");
 });
 
-app.get('/login', (req, res) => {
-    res.render('login')
+app.get("/login", (req, res) => {
+  res.render("login");
 });
 
 app.listen(port, () => {
-    console.log(`App listening to port ${port}`);
+  console.log(`App listening to port ${port}`);
 });
