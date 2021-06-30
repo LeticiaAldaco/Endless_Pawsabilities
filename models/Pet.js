@@ -16,16 +16,12 @@ Pet.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-  //   personality: {
-  //     type: DataTypes.STRING,
-  //     allowNull: false,
-  //   },
-  //   hair: {
-  //     type: DataTypes.STRING,
-  //     allowNull: false,
-  //   },
-  // },
-  // {
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  },
+  {
     sequelize,
     timestamps: false,
     freezeTableName: true,

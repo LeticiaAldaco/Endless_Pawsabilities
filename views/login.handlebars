@@ -1,1 +1,31 @@
-<h1>login page/sign up</h1>
+{{!-- login --}}
+<form class="login-form">
+  <div>
+    <label for="user-login">username:</label>
+    <input type="text" id="user-login" />
+  </div>
+  <div>
+    <label for="password-login">password:</label>
+    <input type="password" id="password-login" />
+  </div>
+  <div>
+    <button type="submit">login</button>
+  </div>
+</form>
+
+{{!-- sign up --}}
+<form class="signup-form">
+  <div>
+    <label for="username-signup">username:</label>
+    <input type="text" id="username-signup" />
+  </div>
+  <div>
+    <label for="password-signup">password:</label>
+    <input type="password" id="password-signup" />
+  </div>
+  <div>
+    <button type="submit">signup</button>
+  </div>
+</form>
+
+<script src="/public/javascript/login.js"></script>
