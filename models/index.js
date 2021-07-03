@@ -1,5 +1,6 @@
 const Pet = require("./Pet");
 const User = require("./user");
+const Auth = require('./auth');
 
 module.exports = { Pet, User };
 
