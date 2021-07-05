@@ -1,31 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../../../favicon.ico" />
+    <title>Login Form</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+      body { padding-top: 5rem; } .starter-template { padding: 3rem 1.5rem;
+      text-align: center; }
+    </style>
+  </head>
 {{!-- login --}}
-<form class="login-form">
-  <div>
-    <label for="user-login">username:</label>
-    <input type="text" id="user-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
+  <body>
+    <div class="container">
+      <form id="email-login" name="signin" method="post" action="signin/user">
+        <div class="form-group">
+          <label for="">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            name="email"
+          />
+          <small id="emailHelp" class="form-text text-muted">We'll never share
+            your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="password-login">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+            name="password"
+          />
+        </div>
 
-{{!-- sign up --}}
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
-<script src="/public/javascript/login.js"></script>
+    </div>
+    <br />
+    {{!-- sign up --}}
+    <div class="container">
+      <form id="username-signup" name="signup" method="post" action="/signup">
+        <label for="email-signup">Email Address</label>
+        <input class="text" name="email" type="email" />
+        <label for="password-signup">Password</label>
+        <input name="password" type="password" />
+        <input class="btn btn-warning" type="submit" value="Sign Up" />
+      </form>
+
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
