@@ -6,7 +6,7 @@ const handlebars = require("express-handlebars");
 const app = express();
 const port = 3001;
 
-const sequelize = reauire("./config/connection");
+const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const sess = {
